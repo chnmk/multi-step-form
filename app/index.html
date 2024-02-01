@@ -19,39 +19,110 @@
   </style>
 </head>
 <body>
+
+  <!-- Remove: -->
+
   <div id="hello"></div>
 
   <!-- Sidebar start -->
 
-  Step 1
-  Your info
-
-  Step 2
-  Select plan
-
-  Step 3
-  Add-ons
-
-  Step 4
-  Summary
+  <aside class="steps-navigation">
+    <section class="steps-navigation__step1">
+      <span class="nav-step1-list">
+        1
+      </span>
+      <span class="nav-step1-text">
+        <div class="nav-step1-text__header">
+          Step 1
+        </div>
+        <div class="nav-step1-text__desc">
+          Your info
+        </div>
+      </span>
+    </section>
+    <section class="steps-navigation__step2">
+      <span class="nav-step2-list">
+        2
+      </span>
+      <span class="nav-step2-text">
+        <div class="nav-step2-text__header">
+          Step 2
+        </div>
+        <div class="nav-step2-text__desc">
+          Select plan
+        </div>
+      </span>
+    </section>
+    <section class="steps-navigation__step3">
+      <span class="nav-step3-list">
+        3
+      </span>
+      <span class="nav-step3-text">
+        <div class="nav-step3-text__header">
+          Step 3
+        </div>
+        <div class="nav-step3-text__desc">
+          Add-ons
+        </div>
+      </span>
+    </section>
+    <section class="steps-navigation__step4">
+      <span class="nav-step4-list">
+        4
+      </span>
+      <span class="nav-step4-text">
+        <div class="nav-step4-text__header">
+          Step 4
+        </div>
+        <div class="nav-step4-text__desc">
+          Summary
+        </div>
+      </span>
+    </section>
+  </aside>
 
   <!-- Sidebar end -->
 
   <!-- Step 1 start -->
 
-  Personal info
-  Please provide your name, email address, and phone number.
+  <main class="main-step1">
 
-  Name
-  e.g. Stephen King
-
-  Email Address
-  e.g. stephenking@lorem.com
-
-  Phone Number
-  e.g. +1 234 567 890
-
-  Next Step
+    <h1 class="main-step1__header">
+      Personal info
+    </h1>
+    <p class="main-step1__subheader">
+      Please provide your name, email address, and phone number.
+    </p>
+    <div class="main-step1__inputs">
+      <div class="name-input">
+        <p class="name-input__header">
+          Name
+        </p>
+        <input type="text" class="name-input__input">
+          e.g. Stephen King
+        </input>
+      </div>
+      <div class="email-input">
+        <p class="email-input__header">
+          Email Address
+        </p>
+        <input type="text" class="email-input__input">
+          e.g. stephenking@lorem.com
+        </input>
+      </div>
+      <div class="phone-input">
+        <p class="phone-input__header">
+          Phone Number
+        </p>
+        <input type="text" class="phone-input__input">
+          e.g. +1 234 567 890
+        </input>
+      </div>
+    </div>
+    <button class="main-step1__next-button">
+      Next Step
+    </button>
+  </main>
 
   <!-- Step 1 end -->
 
