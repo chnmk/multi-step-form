@@ -25,7 +25,6 @@
   <div id="hello"></div>
 
   <!-- Sidebar start -->
-
   <aside class="steps-navigation">
     <section class="steps-navigation__step1">
       <span class="nav-step1-list">
@@ -80,11 +79,8 @@
       </span>
     </section>
   </aside>
-
   <!-- Sidebar end -->
-
   <!-- Step 1 start -->
-
   <main class="form">
     <div class="form-step1">
       <h1 class="form-step1__header">
@@ -120,23 +116,49 @@
     <!-- Step 1 end -->
     <!-- Step 2 start -->
     <div class="form-step2">
-      Select your plan
-      You have the option of monthly or yearly billing.
-    
-      Arcade
-      $9/mo
-    
-      Advanced
-      $12/mo
-    
-      Pro
-      $15/mo
-    
-      Monthly
-      Yearly
-    
-      Go Back
-      Next Step
+      <h1 class="form-step2__header">
+        Select your plan
+      </h1>
+      <p class="form-step2__subheader">
+        You have the option of monthly or yearly billing.
+      </p>
+      <div class="form-step2__options">
+        <div class="plan-option">
+          <div class="arcade-option">
+            <img class="arcade-option_img" src="./images/icon-arcade.svg" alt="Arcade" />
+            <div class="arcade-option__text">
+              Arcade
+              $9/mo
+            </div>
+          </div>
+          <div class="advanced-option">
+            <img class="advanced-option_img" src="./images/icon-advanced.svg" alt="Advanced" />
+            <div class="advanced-option__text">
+              Advanced
+              $12/mo
+            </div>
+          </div>
+          <div class="pro-option">
+            <img class="pro-option_img" src="./images/icon-pro.svg" alt="Pro" />
+            <div class="pro-option__text">
+              Pro
+              $15/mo
+            </div>
+          </div>
+        </div>
+        <div class="billing-option">
+          Monthly
+          Yearly
+        </div>
+      </div>
+      <div class="form-step2__buttons">
+        <button class="form-step2__back-button">
+          Go Back
+        </button>
+        <button class="form-step2__next-button">
+          Next Step
+        </button>
+      </div>
     </div>
     <!-- Step 2 end -->
     <!-- Step 3 start -->
