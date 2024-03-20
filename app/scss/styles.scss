@@ -1,11 +1,19 @@
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.wrapper {
+    display: flex;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.steps-navigation {
+    width: 20%;
+    padding: 1rem;
 }
+
+.form {
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
 
 .form-step1--disabled {
     display:none
@@ -19,6 +27,15 @@
 .form-step4--disabled {
     display:none
 }
-.form-step35-disabled {
+.form-step5--disabled {
     display:none
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }

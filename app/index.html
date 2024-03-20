@@ -14,296 +14,298 @@
   
 </head>
 <body>
-  <!-- Sidebar start -->
-  <aside class="steps-navigation">
-    <section class="steps-navigation__step1">
-      <span class="nav-step1-list">
-        1
-      </span>
-      <span class="nav-step1-text">
-        <div class="nav-step1-text__header">
-          Step 1
-        </div>
-        <div class="nav-step1-text__desc">
-          Your info
-        </div>
-      </span>
-    </section>
-    <section class="steps-navigation__step2">
-      <span class="nav-step2-list">
-        2
-      </span>
-      <span class="nav-step2-text">
-        <div class="nav-step2-text__header">
-          Step 2
-        </div>
-        <div class="nav-step2-text__desc">
-          Select plan
-        </div>
-      </span>
-    </section>
-    <section class="steps-navigation__step3">
-      <span class="nav-step3-list">
-        3
-      </span>
-      <span class="nav-step3-text">
-        <div class="nav-step3-text__header">
-          Step 3
-        </div>
-        <div class="nav-step3-text__desc">
-          Add-ons
-        </div>
-      </span>
-    </section>
-    <section class="steps-navigation__step4">
-      <span class="nav-step4-list">
-        4
-      </span>
-      <span class="nav-step4-text">
-        <div class="nav-step4-text__header">
-          Step 4
-        </div>
-        <div class="nav-step4-text__desc">
-          Summary
-        </div>
-      </span>
-    </section>
-  </aside>
-  <!-- Sidebar end -->
-  <!-- Step 1 start -->
-  <main class="form">
-    <div class="form-step1">
-      <div class="form-step1__message">
-        <h1 class="form-step1__header">
-          Personal info
-        </h1>
-        <p class="form-step1__subheader">
-          Please provide your name, email address, and phone number.
-        </p>
-      </div>
-      <div class="form-step1__inputs">
-        <div class="form-input">
-          <p class="form-input__header">
-            Name
+  <main class="wrapper">
+    <!-- Sidebar start -->
+    <aside class="steps-navigation">
+      <section class="steps-navigation__step1">
+        <span class="nav-step1-list">
+          1
+        </span>
+        <span class="nav-step1-text">
+          <div class="nav-step1-text__header">
+            Step 1
+          </div>
+          <div class="nav-step1-text__desc">
+            Your info
+          </div>
+        </span>
+      </section>
+      <section class="steps-navigation__step2">
+        <span class="nav-step2-list">
+          2
+        </span>
+        <span class="nav-step2-text">
+          <div class="nav-step2-text__header">
+            Step 2
+          </div>
+          <div class="nav-step2-text__desc">
+            Select plan
+          </div>
+        </span>
+      </section>
+      <section class="steps-navigation__step3">
+        <span class="nav-step3-list">
+          3
+        </span>
+        <span class="nav-step3-text">
+          <div class="nav-step3-text__header">
+            Step 3
+          </div>
+          <div class="nav-step3-text__desc">
+            Add-ons
+          </div>
+        </span>
+      </section>
+      <section class="steps-navigation__step4">
+        <span class="nav-step4-list">
+          4
+        </span>
+        <span class="nav-step4-text">
+          <div class="nav-step4-text__header">
+            Step 4
+          </div>
+          <div class="nav-step4-text__desc">
+            Summary
+          </div>
+        </span>
+      </section>
+    </aside>
+    <!-- Step 1 start -->
+    <!-- Sidebar end -->
+    <div class="form">
+      <div class="form-step1">
+        <div class="form-step1__message">
+          <h1 class="form-step1__header">
+            Personal info
+          </h1>
+          <p class="form-step1__subheader">
+            Please provide your name, email address, and phone number.
           </p>
-          <input type="text" class="name-input__input" placeholder="e.g. Stephen King" />
         </div>
-        <div class="email-input">
-          <p class="email-input__header">
-            Email Address
+        <div class="form-step1__inputs">
+          <div class="form-input">
+            <p class="form-input__header">
+              Name
+            </p>
+            <input type="text" class="name-input__input" placeholder="e.g. Stephen King" />
+          </div>
+          <div class="email-input">
+            <p class="email-input__header">
+              Email Address
+            </p>
+            <input type="text" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
+          </div>
+          <div class="phone-input">
+            <p class="phone-input__header">
+              Phone Number
+            </p>
+            <input type="text" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
+          </div>
+        </div>
+        <div class="form-step1__buttons">
+          <button class="form-step1__next-button" id="target">
+            Next Step
+          </button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+      <!-- Step 2 start -->
+      <div class="form-step2 form-step2--disabled">
+        <div class="form-step2__message">
+          <h1 class="form-step2__header">
+            Select your plan
+          </h1>
+          <p class="form-step2__subheader">
+            You have the option of monthly or yearly billing.
           </p>
-          <input type="text" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
         </div>
-        <div class="phone-input">
-          <p class="phone-input__header">
-            Phone Number
+        <div class="form-step2__options">
+          <div class="plan-option">
+            <div class="arcade-option">
+              <img class="arcade-option_img" src="./images/icon-arcade.svg" alt="Arcade" />
+              <div class="arcade-option__text">
+                Arcade
+                $9/mo
+              </div>
+            </div>
+            <div class="advanced-option">
+              <img class="advanced-option_img" src="./images/icon-advanced.svg" alt="Advanced" />
+              <div class="advanced-option__text">
+                Advanced
+                $12/mo
+              </div>
+            </div>
+            <div class="pro-option">
+              <img class="pro-option_img" src="./images/icon-pro.svg" alt="Pro" />
+              <div class="pro-option__text">
+                Pro
+                $15/mo
+              </div>
+            </div>
+          </div>
+          <div class="billing-option">
+            Monthly
+            Yearly
+          </div>
+        </div>
+        <div class="form-step2__buttons">
+          <button class="form-step2__back-button">
+            Go Back
+          </button>
+          <button class="form-step2__next-button">
+            Next Step
+          </button>
+        </div>
+      </div>
+      <!-- Step 2 end -->
+      <!-- Step 3 start -->
+      <div class="form-step3 form-step3--disabled">
+        <div class="form-step3__message">
+          <h1 class="form-step3__header">
+            Pick add-ons
+          </h1>
+          <p class="form-ste3__subheader">
+            Add-ons help enhance your gaming experience.
           </p>
-          <input type="text" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
         </div>
-      </div>
-      <div class="form-step1__buttons">
-        <button class="form-step1__next-button" id="target">
-          Next Step
-        </button>
-      </div>
-    </div>
-    <!-- Step 1 end -->
-    <!-- Step 2 start -->
-    <div class="form-step2 form-step2--disabled">
-      <div class="form-step2__message">
-        <h1 class="form-step2__header">
-          Select your plan
-        </h1>
-        <p class="form-step2__subheader">
-          You have the option of monthly or yearly billing.
-        </p>
-      </div>
-      <div class="form-step2__options">
-        <div class="plan-option">
-          <div class="arcade-option">
-            <img class="arcade-option_img" src="./images/icon-arcade.svg" alt="Arcade" />
-            <div class="arcade-option__text">
-              Arcade
-              $9/mo
+        <div class="form-step3__add-ons">
+          <div class="add-online">
+            <div class="add-online__checkbox">
+              <img class="online__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
             </div>
-          </div>
-          <div class="advanced-option">
-            <img class="advanced-option_img" src="./images/icon-advanced.svg" alt="Advanced" />
-            <div class="advanced-option__text">
-              Advanced
-              $12/mo
+            <div class="add-online-text">
+              <div class="add-online-text__title">
+                Online service
+              </div>
+              <div class="add-online-text__description">
+                Access to multiplayer games
+              </div>
             </div>
-          </div>
-          <div class="pro-option">
-            <img class="pro-option_img" src="./images/icon-pro.svg" alt="Pro" />
-            <div class="pro-option__text">
-              Pro
-              $15/mo
-            </div>
-          </div>
-        </div>
-        <div class="billing-option">
-          Monthly
-          Yearly
-        </div>
-      </div>
-      <div class="form-step2__buttons">
-        <button class="form-step2__back-button">
-          Go Back
-        </button>
-        <button class="form-step2__next-button">
-          Next Step
-        </button>
-      </div>
-    </div>
-    <!-- Step 2 end -->
-    <!-- Step 3 start -->
-    <div class="form-step3 form-step3--disabled">
-      <div class="form-step3__message">
-        <h1 class="form-step3__header">
-          Pick add-ons
-        </h1>
-        <p class="form-ste3__subheader">
-          Add-ons help enhance your gaming experience.
-        </p>
-      </div>
-      <div class="form-step3__add-ons">
-        <div class="add-online">
-          <div class="add-online__checkbox">
-            <img class="online__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
-          </div>
-          <div class="add-online-text">
-            <div class="add-online-text__title">
-              Online service
-            </div>
-            <div class="add-online-text__description">
-              Access to multiplayer games
-            </div>
-          </div>
-          <div class="add-online-price">
-            +$1/mo
-          </div>
-        </div>
-        <div class="add-storage">
-          <div class="add-storage__checkbox">
-            <img class="storage-checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
-          </div>
-          <div class="add-storage-text">
-            <div class="add-storage-text__title">
-              Larger storage
-            </div>
-            <div class="add-storage-text__description">
-              Extra 1TB of cloud save
-            </div>
-          </div>
-          <div class="add-storage-price">
-            +$2/mo
-          </div>
-        </div>
-        <div class="add-custom">
-          <div class="add-custom__checkbox">
-            <img class="add-custom-checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
-          </div>
-          <div class="add-custom-text">
-            <div class="add-custom-text__title">
-              Customizable Profile
-            </div>
-            <div class="add-custom-text__description">
-              Custom theme on your profile
-            </div>
-          </div>
-          <div class="add-custom-price">
-            +$2/mo
-          </div>
-        </div>
-      </div>
-      <div class="form-step3__buttons">
-        <button class="form-step3__back-button">
-          Go Back
-        </button>
-        <button class="form-step3__next-button">
-          Next Step
-        </button>
-      </div>
-    </div>
-    <!-- Step 3 end -->
-    <!-- Step 4 start -->
-    <div class="form-step4 form-step4--disabled">
-      <div class="form-step4__message">
-        <h1 class="form-step4__header">
-          Finishing up
-        </h1>
-        <p class="form-step4__subheader">
-          Double-check everything looks OK before confirming.
-        </p>
-      </div>
-      <div class="form-step4__summary">
-        <div class="summary-plan">
-          <span class="summary-plan__info">
-            <div class="summary-plan__title">
-              Arcade (Monthly)
-            </div>
-            <div class="summary-plan__change">
-              Change
-            </div>
-          </span>
-          <span class="summary-plan__price">
-            $9/mo
-          </span>
-        </div>
-        <div class="summary-misc">
-          <div class="summary-misc__online">
-            <span class="summary-misc__online-title">
-              Online service
-            </span>
-            <span class="summary-misc__online-price">
+            <div class="add-online-price">
               +$1/mo
-            </span>
+            </div>
           </div>
-          <hr class="summary-misc__hr" />
-          <div class="summary-misc__storage">
-            <span class="summary-misc__storage-title">
-              Larger storage
-            </span>
-            <span class="summary-misc__storage-price">
+          <div class="add-storage">
+            <div class="add-storage__checkbox">
+              <img class="storage-checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+            </div>
+            <div class="add-storage-text">
+              <div class="add-storage-text__title">
+                Larger storage
+              </div>
+              <div class="add-storage-text__description">
+                Extra 1TB of cloud save
+              </div>
+            </div>
+            <div class="add-storage-price">
               +$2/mo
-            </span>
+            </div>
+          </div>
+          <div class="add-custom">
+            <div class="add-custom__checkbox">
+              <img class="add-custom-checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+            </div>
+            <div class="add-custom-text">
+              <div class="add-custom-text__title">
+                Customizable Profile
+              </div>
+              <div class="add-custom-text__description">
+                Custom theme on your profile
+              </div>
+            </div>
+            <div class="add-custom-price">
+              +$2/mo
+            </div>
           </div>
         </div>
+        <div class="form-step3__buttons">
+          <button class="form-step3__back-button">
+            Go Back
+          </button>
+          <button class="form-step3__next-button">
+            Next Step
+          </button>
+        </div>
       </div>
-      <div class="total-cost">
-        <span class="total-cost__title">
-          Total (per month/year)
-        </span>
-        <span class="total-cost_price">
-          +$12/mo
-        </span>
+      <!-- Step 3 end -->
+      <!-- Step 4 start -->
+      <div class="form-step4 form-step4--disabled">
+        <div class="form-step4__message">
+          <h1 class="form-step4__header">
+            Finishing up
+          </h1>
+          <p class="form-step4__subheader">
+            Double-check everything looks OK before confirming.
+          </p>
+        </div>
+        <div class="form-step4__summary">
+          <div class="summary-plan">
+            <span class="summary-plan__info">
+              <div class="summary-plan__title">
+                Arcade (Monthly)
+              </div>
+              <div class="summary-plan__change">
+                Change
+              </div>
+            </span>
+            <span class="summary-plan__price">
+              $9/mo
+            </span>
+          </div>
+          <div class="summary-misc">
+            <div class="summary-misc__online">
+              <span class="summary-misc__online-title">
+                Online service
+              </span>
+              <span class="summary-misc__online-price">
+                +$1/mo
+              </span>
+            </div>
+            <hr class="summary-misc__hr" />
+            <div class="summary-misc__storage">
+              <span class="summary-misc__storage-title">
+                Larger storage
+              </span>
+              <span class="summary-misc__storage-price">
+                +$2/mo
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="total-cost">
+          <span class="total-cost__title">
+            Total (per month/year)
+          </span>
+          <span class="total-cost_price">
+            +$12/mo
+          </span>
+        </div>
+        <div class="form-step4__buttons">
+          <button class="form-step4__back-button">
+            Go Back
+          </button>
+          <button class="form-step4__next-button">
+            Confirm
+          </button>
+        </div>
       </div>
-      <div class="form-step4__buttons">
-        <button class="form-step4__back-button">
-          Go Back
-        </button>
-        <button class="form-step4__next-button">
-          Confirm
-        </button>
+      <!-- Step 4 end -->
+      <!-- Step 5 start -->
+      <div class="form-step5 form-step5--disabled">
+        <img class="form-step5__image" src="./images/icon-thank-you.svg" alt="thank you" />
+        <div class="form-step5__message">
+          <h1 class="form-step5__header">
+            Thank you!
+          </h1>
+          <p class="form-step5__subheader">
+            Thanks for confirming your subscription! We hope you have fun 
+            using our platform. If you ever need support, please feel free 
+            to email us at support@loremgaming.com.
+          </p>
+        </div>
       </div>
+        <!-- Step 5 end -->
     </div>
-    <!-- Step 4 end -->
-    <!-- Step 5 start -->
-    <div class="form-step5 form-step5--disabled">
-      <img class="form-step5__image" src="./images/icon-thank-you.svg" alt="thank you" />
-      <div class="form-step5__message">
-        <h1 class="form-step5__header">
-          Thank you!
-        </h1>
-        <p class="form-step5__subheader">
-          Thanks for confirming your subscription! We hope you have fun 
-          using our platform. If you ever need support, please feel free 
-          to email us at support@loremgaming.com.
-        </p>
-      </div>
-    </div>
-      <!-- Step 5 end -->
   </main>
   <footer class="attribution">
     Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
