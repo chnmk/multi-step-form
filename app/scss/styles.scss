@@ -1,22 +1,22 @@
 @font-face {
     font-family: 'Ubuntu Bold';
-    src: url('app/fonts/Ubuntu-Bold.ttf') format('ttf');
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Ubuntu Medium';
-    src: url('app/fonts/Ubuntu-Medium.ttf') format('ttf');
+    src: url('../fonts/Ubuntu-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Ubuntu Regular';
-    src: url('app/fonts/Ubuntu-Regular.ttf') format('ttf');
+    src: url('../fonts/Ubuntu-Regular.woff2') format('woff2');
 }
 
 $marine-blue: hsl(213, 96%, 18%);
 $purplish-blue: hsl(243, 100%, 62%);
 $pastel-blue: hsl(228, 100%, 84%);
-$light-blue: hsl(206, 94, 87%);
+$light-blue: hsl(206, 94%, 87%);
 $strawberry-red: hsl(354, 84%, 57%);
 
 $cool-gray: hsl(231, 11%, 63%);
@@ -25,17 +25,24 @@ $magnolia: hsl(217, 100%, 97%);
 $alabaster: hsl(231, 100%, 99%);
 $white: hsl(0,0%, 100%);
 
-.html {
+.html, body {
     font-size: 16px;
+    font-family: 'Ubuntu Regular';
 }
 
 .wrapper {
     display: flex;
 }
 
+// Navigation:
+
 .steps-navigation {
     width: 20%;
     padding: 1rem;
+    background-color: $purplish-blue;
+    background-image: url("../images/bg-sidebar-desktop.svg");
+    background-position: bottom;
+    border-radius: 8px;
 }
 
 .form {
@@ -45,6 +52,130 @@ $white: hsl(0,0%, 100%);
     justify-content: center;
 }
 
+.steps-navigation__step1 {
+    padding: 0.5rem;
+}
+.steps-navigation__step2 {
+    padding: 0.5rem;
+}
+.steps-navigation__step3 {
+    padding: 0.5rem;
+}
+.steps-navigation__step4 {
+    padding: 0.5rem;
+}
+
+.nav-step1-list {
+    background-color: $light-blue;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.55rem;
+    text-align: center;
+    border: 1px solid $light-blue;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+}
+.nav-step2-list {
+    background-color: $light-blue;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.55rem;
+    text-align: center;
+    border: 1px solid $light-blue;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+}
+.nav-step3-list {
+    background-color: $light-blue;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.55rem;
+    text-align: center;
+    border: 1px solid $light-blue;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+}
+.nav-step4-list {
+    background-color: $light-blue;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.55rem;
+    text-align: center;
+    border: 1px solid $light-blue;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+}
+
+.nav-step1-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    &__header {
+        color: $cool-gray;
+    }
+    &__desc {
+        color: $alabaster;
+        font-family: "Ubuntu Bold";
+    }
+}
+.nav-step2-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    &__header {
+        color: $cool-gray;
+    }
+    &__desc {
+        color: $alabaster;
+        font-family: "Ubuntu Bold";
+    }
+}
+.nav-step3-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    &__header {
+        color: $cool-gray;
+    }
+    &__desc {
+        color: $alabaster;
+        font-family: "Ubuntu Bold";
+    }
+}
+.nav-step4-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    &__header {
+        color: $cool-gray;
+    }
+    &__desc {
+        color: $alabaster;
+        font-family: "Ubuntu Bold";
+    }
+}
+
+// =======================
 
 .form-step1--disabled {
     display:none
