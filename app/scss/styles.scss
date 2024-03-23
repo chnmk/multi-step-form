@@ -52,20 +52,24 @@ $white: hsl(0,0%, 100%);
     justify-content: center;
 }
 
-.steps-navigation__step1 {
-    padding: 0.5rem;
-}
-.steps-navigation__step2 {
-    padding: 0.5rem;
-}
-.steps-navigation__step3 {
-    padding: 0.5rem;
-}
-.steps-navigation__step4 {
+%steps-navigation-styles {
     padding: 0.5rem;
 }
 
-.nav-step1-list {
+.steps-navigation__step1 {
+    @extend %steps-navigation-styles
+}
+.steps-navigation__step2 {
+    @extend %steps-navigation-styles
+}
+.steps-navigation__step3 {
+    @extend %steps-navigation-styles
+}
+.steps-navigation__step4 {
+    @extend %steps-navigation-styles
+}
+
+%nav-num-styles {
     background-color: $light-blue;
     display: inline-block;
     width: 2rem;
@@ -78,100 +82,70 @@ $white: hsl(0,0%, 100%);
     font-size: 0.9rem;
     font-family: 'Ubuntu Medium';
 }
-.nav-step2-list {
-    background-color: $light-blue;
-    display: inline-block;
-    width: 2rem;
-    height: 1rem;
-    padding-top: 0.45rem;
-    padding-bottom: 0.55rem;
-    text-align: center;
-    border: 1px solid $light-blue;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    font-family: 'Ubuntu Medium';
+
+.nav-step1-num {
+    @extend %nav-num-styles
 }
-.nav-step3-list {
-    background-color: $light-blue;
-    display: inline-block;
-    width: 2rem;
-    height: 1rem;
-    padding-top: 0.45rem;
-    padding-bottom: 0.55rem;
-    text-align: center;
-    border: 1px solid $light-blue;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    font-family: 'Ubuntu Medium';
+.nav-step2-num {
+    @extend %nav-num-styles
 }
-.nav-step4-list {
-    background-color: $light-blue;
+.nav-step3-num {
+    @extend %nav-num-styles
+}
+.nav-step4-num {
+    @extend %nav-num-styles
+}
+
+
+%nav-text-styles {
     display: inline-block;
-    width: 2rem;
-    height: 1rem;
-    padding-top: 0.45rem;
-    padding-bottom: 0.55rem;
-    text-align: center;
-    border: 1px solid $light-blue;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    font-family: 'Ubuntu Medium';
+    vertical-align: top;
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+%nav-header-styles {
+    color: $cool-gray;
+}
+%nav-desc-styles {
+    color: $alabaster;
+    font-family: "Ubuntu Bold";
 }
 
 .nav-step1-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 0.8rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+    @extend %nav-text-styles;
     &__header {
-        color: $cool-gray;
+        @extend %nav-header-styles
     }
     &__desc {
-        color: $alabaster;
-        font-family: "Ubuntu Bold";
+        @extend %nav-desc-styles
     }
 }
 .nav-step2-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 0.8rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+    @extend %nav-text-styles;
     &__header {
-        color: $cool-gray;
+        @extend %nav-header-styles
     }
     &__desc {
-        color: $alabaster;
-        font-family: "Ubuntu Bold";
+        @extend %nav-desc-styles
     }
 }
 .nav-step3-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 0.8rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+    @extend %nav-text-styles;
     &__header {
-        color: $cool-gray;
+        @extend %nav-header-styles
     }
     &__desc {
-        color: $alabaster;
-        font-family: "Ubuntu Bold";
+        @extend %nav-desc-styles
     }
 }
 .nav-step4-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 0.8rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+    @extend %nav-text-styles;
     &__header {
-        color: $cool-gray;
+        @extend %nav-header-styles
     }
     &__desc {
-        color: $alabaster;
-        font-family: "Ubuntu Bold";
+        @extend %nav-desc-styles
     }
 }
 
