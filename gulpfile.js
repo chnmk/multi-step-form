@@ -11,7 +11,7 @@ const clean = require('gulp-clean')
 
 
 function styles() {
-    return src('app/scss/styles.scss')
+    return src('app/scss/index.scss')
         .pipe(concat('style.min.css'))
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(dest('app/css'))
@@ -48,7 +48,7 @@ function browsersync(){
 }
 
 function watching() {
-    watch(['app/scss/styles.scss'], styles)
+    watch(['app/scss/index.scss'], styles)
     watch(['app/js/main.js'], scripts)
     watch(['app/*.html']).on('change', browserSync.reload)
 }
