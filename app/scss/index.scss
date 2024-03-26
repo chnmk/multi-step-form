@@ -15,3 +15,79 @@
 .wrapper {
     display: flex;
 }
+
+// move this to step1.scss:
+
+.form-step1--disabled {
+    display:none
+}
+
+.form-step1 {
+    &__message {
+        margin-bottom: 3rem;
+    }
+
+    &__header {
+        font-family: 'Ubuntu Bold';
+        margin-bottom: 0.5rem;
+    }
+
+    &__subheader {
+        margin-top: 0rem;
+        color: hsl(231, 11%, 63%); // $cool-gray
+    }
+}
+
+.form-input {
+    &__header {
+        font-family: 'Ubuntu Medium';
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+        margin-left: 0.2rem;
+    }
+
+    &__input {
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: 1px solid hsl(229, 24%, 87%); // $light-gray
+        width: 95%;
+    }
+    
+    margin-bottom: 1.5rem;
+}
+
+.email-input {
+    &__header {
+        font-family: 'Ubuntu Medium';
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+        margin-left: 0.2rem;
+    }
+
+    &__input {
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: 1px solid hsl(229, 24%, 87%); // $light-gray
+        width: 95%;
+    }
+    
+    margin-bottom: 1.5rem;
+}
+
+.phone-input {
+    &__header {
+        font-family: 'Ubuntu Medium';
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+        margin-left: 0.2rem;
+    }
+
+    &__input {
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: 1px solid hsl(229, 24%, 87%); // $light-gray
+        width: 95%;
+    }
+    
+    margin-bottom: 1.5rem;
+}
