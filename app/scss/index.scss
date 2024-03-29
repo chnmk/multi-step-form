@@ -88,4 +88,35 @@
     margin-bottom: 1.5rem;
 }
 
+.form-step2__buttons {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.form-step2__back-button {
+    display: inline-block;
+    padding-top: 0.9rem;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+    color: hsl(231, 11%, 63%); // $cool-gray
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-step2__next-button {
+    float: inline-end;
+    padding: 0.9rem 1.4rem;
+    border-radius: 7px;
+    border: 0px;
+    background-color: hsl(213, 96%, 18%); // $marine-blue
+    color: hsl(0, 0%, 100%); // $white
+    font-family: 'Ubuntu Medium';
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 // step2.scss:
+
