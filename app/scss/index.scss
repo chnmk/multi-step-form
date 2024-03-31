@@ -16,6 +16,34 @@
     display: flex;
 }
 
+
+// variables.scss:
+
+%buttons-wrapper {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+%back-button {
+    display: inline-block;
+    padding-top: 0.9rem;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+    color: hsl(231, 11%, 63%); // $cool-gray
+}
+
+%next-button {
+    float: inline-end;
+    padding: 0.9rem 1.4rem;
+    border-radius: 7px;
+    border: 0px;
+    background-color: hsl(213, 96%, 18%); // $marine-blue
+    color: hsl(0, 0%, 100%); // $white
+    font-family: 'Ubuntu Medium';
+}
+
+
 // step1.scss:
 
 .form-step1--disabled {
@@ -88,35 +116,78 @@
     margin-bottom: 1.5rem;
 }
 
+.form-step1__buttons {
+    @extend %buttons-wrapper;
+}
+
+.form-step1__next-button {
+    @extend %next-button;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+// step2.scss:
+
+
 .form-step2__buttons {
-    width: 100%;
-    display: inline-block;
-    margin-top: 1rem;
+    @extend %buttons-wrapper;
 }
 
 .form-step2__back-button {
-    display: inline-block;
-    padding-top: 0.9rem;
-    font-size: 0.9rem;
-    font-family: 'Ubuntu Medium';
-    color: hsl(231, 11%, 63%); // $cool-gray
+    @extend %back-button;
     &:hover {
         cursor: pointer;
     }
 }
 
 .form-step2__next-button {
-    float: inline-end;
-    padding: 0.9rem 1.4rem;
-    border-radius: 7px;
-    border: 0px;
-    background-color: hsl(213, 96%, 18%); // $marine-blue
-    color: hsl(0, 0%, 100%); // $white
-    font-family: 'Ubuntu Medium';
+    @extend %next-button;
     &:hover {
         cursor: pointer;
     }
 }
 
-// step2.scss:
 
+// step3.scss:
+
+.form-step3__buttons {
+    @extend %buttons-wrapper;
+}
+
+.form-step3__back-button {
+    @extend %back-button;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-step3__next-button {
+    @extend %next-button;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+// step4.scss:
+
+.form-step4__buttons {
+    @extend %buttons-wrapper;
+}
+
+.form-step4__back-button {
+    @extend %back-button;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-step4__next-button {
+    @extend %next-button;
+    &:hover {
+        cursor: pointer;
+    }
+}
