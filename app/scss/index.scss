@@ -19,6 +19,20 @@
 
 // variables.scss:
 
+%message {
+    margin-bottom: 3rem;
+}
+
+%header {
+    font-family: 'Ubuntu Bold';
+    margin-bottom: 0.5rem;
+}
+
+%subheader {
+    margin-top: 0rem;
+    color: hsl(231, 11%, 63%); // $cool-gray
+}
+
 %buttons-wrapper {
     width: 100%;
     display: inline-block;
@@ -52,17 +66,15 @@
 
 .form-step1 {
     &__message {
-        margin-bottom: 3rem;
+        @extend %message
     }
 
     &__header {
-        font-family: 'Ubuntu Bold';
-        margin-bottom: 0.5rem;
+        @extend %header
     }
 
     &__subheader {
-        margin-top: 0rem;
-        color: hsl(231, 11%, 63%); // $cool-gray
+        @extend %subheader
     }
 }
 
@@ -130,6 +142,19 @@
 
 // step2.scss:
 
+.form-step2 {
+    &__message {
+        @extend %message
+    }
+
+    &__header {
+        @extend %header
+    }
+
+    &__subheader {
+        @extend %subheader
+    }
+}
 
 .form-step2__buttons {
     @extend %buttons-wrapper;
@@ -152,6 +177,20 @@
 
 // step3.scss:
 
+.form-step3 {
+    &__message {
+        @extend %message
+    }
+
+    &__header {
+        @extend %header
+    }
+
+    &__subheader {
+        @extend %subheader
+    }
+}
+
 .form-step3__buttons {
     @extend %buttons-wrapper;
 }
@@ -173,6 +212,20 @@
 
 
 // step4.scss:
+
+.form-step4 {
+    &__message {
+        @extend %message
+    }
+
+    &__header {
+        @extend %header
+    }
+
+    &__subheader {
+        @extend %subheader
+    }
+}
 
 .form-step4__buttons {
     @extend %buttons-wrapper;
