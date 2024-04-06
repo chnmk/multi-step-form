@@ -267,8 +267,6 @@
     }
 }
 
-// =========================
-
 .billing-options {
     margin: 2rem 0rem 6rem 0rem;
     padding: 1rem;
@@ -331,8 +329,6 @@ input:checked + .billing-switch__slider:before {
     transform: translateX(1.15rem);
 }
 
-// =========================
-
 // step3.scss:
 
 .form-step3 {
@@ -349,8 +345,131 @@ input:checked + .billing-switch__slider:before {
     }
 }
 
+%add-option {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid hsl(229, 24%, 87%); // $light-gray
+    display: flex;
+}
+
+%add-option__checkbox {
+    background-color: blue; // temp
+    border-radius: 10px;
+    border: 1px solid hsl(229, 24%, 87%); // $light-gray
+    display: inline-block;
+}
+
+%add-option__checkbox-img {
+
+}
+
+%add-option__text {
+    display: inline-block;
+}
+
+%add-option__text-title {
+
+}
+
+%add-option__text-description {
+
+}
+
+%add-option__price {
+    display: inline-block;
+}
+
+.add-online {
+    @extend %add-option;
+
+    &__checkbox {
+        @extend %add-option__checkbox;
+    }
+    &__checkbox-img {
+        @extend %add-option__checkbox-img;
+    }
+    &__text {
+        @extend %add-option__text;
+    }
+    &__text-title {
+        @extend %add-option__text-title;
+    }
+    &__text-decription {
+        @extend %add-option__text-description;
+    }
+    &__price {
+        @extend %add-option__price;
+    }
+}
+
+.add-storage {
+    @extend %add-option;
+
+    &__checkbox {
+        @extend %add-option__checkbox;
+    }
+    &__checkbox-img {
+        @extend %add-option__checkbox-img;
+    }
+    &__text {
+        @extend %add-option__text;
+    }
+    &__text-title {
+        @extend %add-option__text-title;
+    }
+    &__text-decription {
+        @extend %add-option__text-description;
+    }
+    &__price {
+        @extend %add-option__price;
+    }
+}
+
+.add-custom {
+    @extend %add-option;
+
+    &__checkbox {
+        @extend %add-option__checkbox;
+    }
+    &__checkbox-img {
+        @extend %add-option__checkbox-img;
+    }
+    &__text {
+        @extend %add-option__text;
+    }
+    &__text-title {
+        @extend %add-option__text-title;
+    }
+    &__text-decription {
+        @extend %add-option__text-description;
+    }
+    &__price {
+        @extend %add-option__price;
+    }
+}
+
 .form-step3__buttons {
     @extend %buttons-wrapper;
+
+    &__checkbox {
+        @extend %add-option__checkbox;
+    }
+    &__checkbox-img {
+        @extend %add-option__checkbox-img;
+    }
+    &__text {
+        @extend %add-option__text;
+    }
+    &__text-title {
+        @extend %add-option__text-title;
+    }
+    &__text-decription {
+        @extend %add-option__text-description;
+    }
+    &__price {
+        @extend %add-option__price;
+    }
 }
 
 .form-step3__back-button {
