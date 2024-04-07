@@ -347,42 +347,61 @@ input:checked + .billing-switch__slider:before {
 
 %add-option {
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
     border: 1px solid hsl(229, 24%, 87%); // $light-gray
     display: flex;
+    align-items: center;
+    min-width: 400px; // Temporary
+}
+
+%add-option__checkbox-container {
+    width: 15%;
 }
 
 %add-option__checkbox {
-    background-color: blue; // temp
-    border-radius: 10px;
-    border: 1px solid hsl(229, 24%, 87%); // $light-gray
+    background-color: hsl(243, 100%, 62%); // $purplish-blue
+    border-radius: 5px;
+    // border: 1px solid hsl(229, 24%, 87%); // $light-gray
     display: inline-block;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 %add-option__checkbox-img {
-
+    padding-left: 4px;
 }
 
 %add-option__text {
     display: inline-block;
+    width: 70%;
 }
 
 %add-option__text-title {
-
+    font-family: 'Ubuntu Medium';
+    color: hsl(213, 96%, 18%); // $marine-blue
 }
 
 %add-option__text-description {
-
+    font-size: 0.9rem;
+    color: hsl(231, 11%, 63%); // $cool-gray
+    margin-top: 0.2rem;
 }
 
 %add-option__price {
     display: inline-block;
+    width: 15%;
+    font-size: 0.9rem;
+    color: hsl(243, 100%, 62%); // $purplish-blue
 }
 
 .add-online {
     @extend %add-option;
 
+    &__checkbox-container {
+        @extend %add-option__checkbox-container 
+    }
     &__checkbox {
         @extend %add-option__checkbox;
     }
@@ -395,7 +414,7 @@ input:checked + .billing-switch__slider:before {
     &__text-title {
         @extend %add-option__text-title;
     }
-    &__text-decription {
+    &__text-description {
         @extend %add-option__text-description;
     }
     &__price {
@@ -406,6 +425,9 @@ input:checked + .billing-switch__slider:before {
 .add-storage {
     @extend %add-option;
 
+    &__checkbox-container {
+        @extend %add-option__checkbox-container 
+    }
     &__checkbox {
         @extend %add-option__checkbox;
     }
@@ -418,7 +440,7 @@ input:checked + .billing-switch__slider:before {
     &__text-title {
         @extend %add-option__text-title;
     }
-    &__text-decription {
+    &__text-description {
         @extend %add-option__text-description;
     }
     &__price {
@@ -429,6 +451,9 @@ input:checked + .billing-switch__slider:before {
 .add-custom {
     @extend %add-option;
 
+    &__checkbox-container {
+        @extend %add-option__checkbox-container 
+    }
     &__checkbox {
         @extend %add-option__checkbox;
     }
@@ -441,7 +466,7 @@ input:checked + .billing-switch__slider:before {
     &__text-title {
         @extend %add-option__text-title;
     }
-    &__text-decription {
+    &__text-description {
         @extend %add-option__text-description;
     }
     &__price {
