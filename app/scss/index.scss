@@ -529,6 +529,112 @@ input:checked + .billing-switch__slider:before {
     }
 }
 
+.form-step4__summary {
+    background-color: hsl(217, 100%, 97%); // $magnolia
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.summary-plan {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    min-width: 400px; // Temporary
+
+    &__info {
+        width: 85%;
+    }
+
+    &__title {
+        color: hsl(213, 96%, 18%); // $marine-blue
+        font-family: 'Ubuntu Bold';
+    }
+    &__change {
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: hsl(231, 11%, 63%); // $cool-gray
+        font-family: 'Ubuntu Medium';
+        text-decoration: underline 2px hsl(231, 11%, 63%); // $cool-gray
+    }
+
+    &__price {
+        width: 15%;
+        color: hsl(213, 96%, 18%); // $marine-blue
+        font-family: 'Ubuntu Bold';
+    }
+}
+
+.summary-hr {
+    border: 1px solid hsl(229, 24%, 87%);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+%summary-misc-default {
+    margin-top: 1rem;
+    display: flex;
+}
+
+%summary-misc-title {
+    font-size: 0.9rem;
+    color: hsl(231, 11%, 63%); // $cool-gray
+    font-family: 'Ubuntu Medium';
+    width: 85%;
+}
+
+
+%summary-misc-price {
+    color: hsl(213, 96%, 18%); // $marine-blue
+    font-size: 0.9rem;
+    width: 15%;
+}
+
+.summary-misc {
+
+    &__online {
+        @extend %summary-misc-default;
+    }
+
+    &__online-title {
+        @extend %summary-misc-title;
+    }
+
+    &__online-price {
+        @extend %summary-misc-price;
+    }
+
+    &__storage {
+        @extend %summary-misc-default;
+    }
+
+    &__storage-title {
+        @extend %summary-misc-title;
+    }
+
+    &__storage-price {
+        @extend %summary-misc-price;
+    }
+}
+
+.total-cost {
+    display: flex;
+    margin: 2rem 0.5rem 2rem 1.5rem;
+
+    &__title {
+        font-size: 0.9rem;
+        color: hsl(231, 11%, 63%); // $cool-gray
+        font-family: 'Ubuntu Medium';
+        width: 75%;
+    }
+
+    &__price {
+        font-family: 'Ubuntu Bold';
+        font-size: 1.1rem;
+        color: hsl(243, 100%, 62%); // $purplish-blue
+    }
+}
+
 .form-step4__buttons {
     @extend %buttons-wrapper;
 }
