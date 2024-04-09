@@ -652,3 +652,37 @@ input:checked + .billing-switch__slider:before {
         cursor: pointer;
     }
 }
+
+// step5.scss:
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem; // Temporary
+
+    &__image {
+        width: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+    }
+
+    &__header {
+        color: hsl(213, 96%, 18%); // $marine-blue
+        font-family: 'Ubuntu Medium';
+        margin-bottom: 0rem;
+    }
+
+    &__subheader {
+        font-size: 0.9rem;
+        color: hsl(231, 11%, 63%); // $cool-gray
+        font-family: 'Ubuntu Medium';
+        text-align: center;
+    }
+}
