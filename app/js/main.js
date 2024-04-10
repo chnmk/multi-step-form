@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //
+    // Next buttons:
 
     $(".form-step1__next-button").on("click", function() {
         $(".form-step1").addClass('form-step1--disabled');
@@ -19,7 +19,7 @@ $(document).ready(function() {
         $(".form-step5").removeClass('form-step5--disabled')
     })
 
-    //
+    // Back buttons:
 
     $(".form-step2__back-button").on("click", function() {
         $(".form-step2").addClass('form-step2--disabled');
@@ -36,4 +36,47 @@ $(document).ready(function() {
 
     //
 
+    $.validator.setDefaults({
+        submitHandler: function() { alert("submitted!"); },
+        errorPlacement: function(error, element) {
+            error.insertBefore(element);
+        }
+    });
+    
+    $("#commentForm").validate({
+        errorClass: "em",
+        validClass: "vm",
+        highlight: function(element, errorClass) {
+            $(element).addClass("test")
+          },
+        unhighlight: function(element, errorClass) {
+        $(element).removeClass("test")
+        }
+    });
+
+    /* Custom messages example:
+
+    $("#myform").validate({
+        rules: {
+            name: "required",
+            email: {
+            required: true,
+            email: true
+            }
+        },
+    })
+
+
+    $("#myform").validate({
+        rules: {
+            name: {
+            required: true,
+            minlength: 2
+            }
+        }
+    )}
+
+    */
+
 })
+

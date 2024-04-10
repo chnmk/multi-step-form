@@ -83,6 +83,7 @@
     font-size: 0.9rem;
     margin-bottom: 0.4rem;
     margin-left: 0.2rem;
+    display: inline;
 }
 
 %step1-input-field {
@@ -685,4 +686,19 @@ input:checked + .billing-switch__slider:before {
         font-family: 'Ubuntu Medium';
         text-align: center;
     }
+}
+
+
+.em { // Message text
+    color: red;
+    float: inline-end;
+    text-align: end;
+}
+
+.vm { // Input field when valid
+    color: purple;
+}
+
+.test {  // Input field when invalid
+    border: 1px solid hsl(354, 84%, 57%); // $strawberry-red
 }

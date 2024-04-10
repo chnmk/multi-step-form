@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
 
   <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
   <script src="./js/main.min.js"></script> 
 
   <title>Frontend Mentor | Multi-step form</title>
@@ -83,24 +84,26 @@
           </p>
         </div>
         <div class="form-step1__inputs">
-          <div class="form-input">
-            <p class="form-input__header">
-              Name
-            </p>
-            <input type="text" class="form-input__input" placeholder="e.g. Stephen King" />
-          </div>
-          <div class="email-input">
-            <p class="email-input__header">
-              Email Address
-            </p>
-            <input type="text" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
-          </div>
-          <div class="phone-input">
-            <p class="phone-input__header">
-              Phone Number
-            </p>
-            <input type="text" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
-          </div>
+          <form class="cmxform" id="commentForm" method="get" action="">
+            <div class="form-input">
+              <p class="form-input__header">
+                Name
+              </p>
+              <input required minlength="10" type="text" class="form-input__input" placeholder="e.g. Stephen King" />
+            </div>
+            <div class="email-input">
+              <p class="email-input__header">
+                Email Address
+              </p>
+              <input type="text" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
+            </div>
+            <div class="phone-input">
+              <p class="phone-input__header">
+                Phone Number
+              </p>
+              <input type="text" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
+            </div>
+          </form>
         </div>
         <div class="form-step1__buttons">
           <button class="form-step1__next-button" id="target">
