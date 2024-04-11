@@ -34,7 +34,16 @@ $(document).ready(function() {
         $(".form-step3").removeClass('form-step3--disabled')
     })
 
-    //
+    // Step 2:
+
+    /*
+    $(".arcade-option").on("click", function() {
+        $(".arcade-option").toggleClass('arcade-option--active');
+        $(".form-step1").removeClass('form-step1--disabled')
+    })
+    */
+
+    // Validation:
 
     $.validator.setDefaults({
         submitHandler: function() { alert("submitted!"); },

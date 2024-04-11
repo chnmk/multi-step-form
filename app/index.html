@@ -95,13 +95,13 @@
               <p class="email-input__header">
                 Email Address
               </p>
-              <input type="text" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
+              <input required type="email" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
             </div>
             <div class="phone-input">
               <p class="phone-input__header">
                 Phone Number
               </p>
-              <input type="text" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
+              <input required type="tel" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
             </div>
           </form>
         </div>
@@ -168,12 +168,16 @@
             </div>
           </div>
           <div class="billing-options">
-            Monthly
+            <span class="billing-options__monthly">
+              Monthly
+            </span>
             <label class="billing-switch">
               <input type="checkbox">
               <span class="billing-switch__slider">
             </label>
-            Yearly
+            <span class="billing-options__yearly">
+              Yearly
+            </span>
           </div>
         </div>
         <div class="form-step2__buttons">

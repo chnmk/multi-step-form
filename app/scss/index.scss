@@ -190,6 +190,10 @@
     color: hsl(213, 96%, 18%); // $marine-blue
 }
 
+%option-active {
+    background-color: green;
+}
+
 .arcade-option {
     @extend %option-styles;
 
@@ -207,6 +211,10 @@
 
     &__free {
         @extend %option-styles-free;
+    }
+
+    &--active {
+        @extend %option-active;
     }
 }
 
@@ -228,6 +236,10 @@
     &__free {
         @extend %option-styles-free;
     }
+
+    &--active {
+        @extend %option-active;
+    }
 }
 
 .pro-option {
@@ -247,6 +259,10 @@
 
     &__free {
         @extend %option-styles-free;
+    }
+
+    &--active {
+        @extend %option-active;
     }
 }
 
@@ -277,6 +293,28 @@
     font-family: 'Ubuntu Bold';
     color: hsl(213, 96%, 18%); // $marine-blue
     text-align: center;
+}
+
+%billing-option {
+    background-color: gray
+}
+
+%billing-option-active {
+    background-color: blue;
+}
+
+.billing-options__monthly {
+    @extend %billing-option;
+    &--active {
+        @extend %billing-option-active;
+    }
+}
+
+.billing-options__yearly {
+    @extend %billing-option;
+        &--active {
+            @extend %billing-option-active;
+    }
 }
  
 .billing-switch {
