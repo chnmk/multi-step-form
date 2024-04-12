@@ -43,6 +43,11 @@ $(document).ready(function() {
     })
     */
 
+    $(".billing-switch__slider").on("click", function() {
+        $(".billing-options__monthly").toggleClass('billing-options__monthly--active');
+        $(".billing-options__yearly").toggleClass('billing-options__yearly--active');
+    })
+
     // Validation:
 
     $.validator.setDefaults({

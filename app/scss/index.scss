@@ -284,6 +284,14 @@
     }
 }
 
+%billing-option {
+    color: hsl(231, 11%, 63%); // $cool-gray
+}
+
+%billing-option-active {
+    color: hsl(213, 96%, 18%); // $marine-blue
+}
+
 .billing-options {
     margin: 2rem 0rem 6rem 0rem;
     padding: 1rem;
@@ -291,29 +299,20 @@
     border-radius: 8px;
     font-size: 0.9rem;
     font-family: 'Ubuntu Bold';
-    color: hsl(213, 96%, 18%); // $marine-blue
     text-align: center;
-}
 
-%billing-option {
-    background-color: gray
-}
-
-%billing-option-active {
-    background-color: blue;
-}
-
-.billing-options__monthly {
-    @extend %billing-option;
-    &--active {
-        @extend %billing-option-active;
-    }
-}
-
-.billing-options__yearly {
-    @extend %billing-option;
+    &__monthly {
+        @extend %billing-option;
         &--active {
             @extend %billing-option-active;
+        }
+    }
+
+    &__yearly {
+        @extend %billing-option;
+        &--active {
+            @extend %billing-option-active;
+    }
     }
 }
  
