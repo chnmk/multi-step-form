@@ -46,6 +46,9 @@ $(document).ready(function() {
     $(".billing-switch__slider").on("click", function() {
         $(".billing-options__monthly").toggleClass('billing-options__monthly--active');
         $(".billing-options__yearly").toggleClass('billing-options__yearly--active');
+        $(".arcade-option__free").toggleClass('arcade-option__free--disabled');
+        $(".advanced-option__free").toggleClass('advanced-option__free--disabled');
+        $(".pro-option__free").toggleClass('pro-option__free--disabled');
     })
 
     // Validation:

@@ -190,6 +190,10 @@
     color: hsl(213, 96%, 18%); // $marine-blue
 }
 
+%option-styles-free-disabled {
+    display: none;
+}
+
 %option-active {
     background-color: green;
 }
@@ -211,6 +215,10 @@
 
     &__free {
         @extend %option-styles-free;
+    }
+
+    &__free--disabled {
+        @extend %option-styles-free-disabled;
     }
 
     &--active {
@@ -237,6 +245,10 @@
         @extend %option-styles-free;
     }
 
+    &__free--disabled {
+        @extend %option-styles-free-disabled;
+    }
+
     &--active {
         @extend %option-active;
     }
@@ -259,6 +271,10 @@
 
     &__free {
         @extend %option-styles-free;
+    }
+
+    &__free--disabled {
+        @extend %option-styles-free-disabled;
     }
 
     &--active {
