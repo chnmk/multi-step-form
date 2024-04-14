@@ -36,12 +36,23 @@ $(document).ready(function() {
 
     // Step 2:
 
-    /*
     $(".arcade-option").on("click", function() {
         $(".arcade-option").toggleClass('arcade-option--active');
-        $(".form-step1").removeClass('form-step1--disabled')
+        $(".advanced-option").removeClass('advanced-option--active');
+        $(".pro-option").removeClass('pro-option--active');
     })
-    */
+
+    $(".advanced-option").on("click", function() {
+        $(".advanced-option").toggleClass('advanced-option--active');
+        $(".arcade-option").removeClass('arcade-option--active');
+        $(".pro-option").removeClass('pro-option--active');
+    })
+
+    $(".pro-option").on("click", function() {
+        $(".pro-option").toggleClass('pro-option--active');
+        $(".advanced-option").removeClass('advanced-option--active');
+        $(".arcade-option").removeClass('arcade-option--active');
+    })
 
     $(".billing-switch__slider").on("click", function() {
         $(".billing-options__monthly").toggleClass('billing-options__monthly--active');
