@@ -62,6 +62,22 @@ $(document).ready(function() {
         $(".pro-option__free").toggleClass('pro-option__free--disabled');
     })
 
+    // Step 3:
+
+    $(".add-online").on("click", function() {
+        $(".add-online__checkbox").toggleClass('add-online__checkbox--enabled');
+        $(".add-online").toggleClass('add-online--enabled');
+    })
+    $(".add-storage").on("click", function() {
+        $(".add-storage__checkbox").toggleClass('add-storage__checkbox--enabled');
+        $(".add-storage").toggleClass('add-storage--enabled');
+
+    })
+    $(".add-custom").on("click", function() {
+        $(".add-custom__checkbox").toggleClass('add-custom__checkbox--enabled');
+        $(".add-custom").toggleClass('add-custom--enabled');
+    })
+
     // Validation:
 
     $.validator.setDefaults({

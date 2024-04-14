@@ -411,18 +411,27 @@ input:checked + .billing-switch__slider:before {
     min-width: 400px; // Temporary
 }
 
+%add-option--enabled {
+    background-color: hsl(217, 100%, 97%); //  $magnolia
+    border: 1px solid hsl(213, 96%, 18%); // $marine-blue
+}
+
 %add-option__checkbox-container {
     width: 15%;
 }
 
 %add-option__checkbox {
-    background-color: hsl(243, 100%, 62%); // $purplish-blue
     border-radius: 5px;
-    // border: 1px solid hsl(229, 24%, 87%); // $light-gray
+    border: 1px solid hsl(229, 24%, 87%); // $light-gray
     display: inline-block;
     height: 20px;
     width: 20px;
     cursor: pointer;
+}
+
+%add-option__checkbox--enabled {
+    background-color: hsl(243, 100%, 62%); // $purplish-blue
+    border: none;
 }
 
 %add-option__checkbox-img {
@@ -455,11 +464,17 @@ input:checked + .billing-switch__slider:before {
 .add-online {
     @extend %add-option;
 
+    &--enabled {
+        @extend %add-option--enabled;
+    }
     &__checkbox-container {
-        @extend %add-option__checkbox-container 
+        @extend %add-option__checkbox-container;
     }
     &__checkbox {
         @extend %add-option__checkbox;
+    }
+    &__checkbox--enabled {
+        @extend %add-option__checkbox--enabled;
     }
     &__checkbox-img {
         @extend %add-option__checkbox-img;
@@ -481,11 +496,17 @@ input:checked + .billing-switch__slider:before {
 .add-storage {
     @extend %add-option;
 
+    &--enabled {
+        @extend %add-option--enabled;
+    }
     &__checkbox-container {
         @extend %add-option__checkbox-container 
     }
     &__checkbox {
         @extend %add-option__checkbox;
+    }
+    &__checkbox--enabled {
+        @extend %add-option__checkbox--enabled;
     }
     &__checkbox-img {
         @extend %add-option__checkbox-img;
@@ -507,11 +528,17 @@ input:checked + .billing-switch__slider:before {
 .add-custom {
     @extend %add-option;
 
+    &--enabled {
+        @extend %add-option--enabled;
+    }
     &__checkbox-container {
         @extend %add-option__checkbox-container 
     }
     &__checkbox {
         @extend %add-option__checkbox;
+    }
+    &__checkbox--enabled {
+        @extend %add-option__checkbox--enabled;
     }
     &__checkbox-img {
         @extend %add-option__checkbox-img;
