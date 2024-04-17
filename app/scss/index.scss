@@ -619,7 +619,6 @@ input:checked + .billing-switch__slider:before {
 }
 
 .summary-plan {
-    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     min-width: 400px; // Temporary
@@ -648,10 +647,15 @@ input:checked + .billing-switch__slider:before {
 }
 
 .summary-hr {
+    margin-top: 1.5rem;
     border: 1px solid hsl(229, 24%, 87%);
     border-bottom: none;
     border-left: none;
     border-right: none;
+}
+
+.summary-hr--disabled {
+    display: none;
 }
 
 %summary-misc-default {
@@ -673,30 +677,49 @@ input:checked + .billing-switch__slider:before {
     width: 15%;
 }
 
+%summary-disabled {
+    display: none;
+}
+
 .summary-misc {
 
     &__online {
         @extend %summary-misc-default;
     }
-
     &__online-title {
         @extend %summary-misc-title;
     }
-
     &__online-price {
         @extend %summary-misc-price;
+    }
+    &__online--disabled {
+        @extend %summary-disabled ;
     }
 
     &__storage {
         @extend %summary-misc-default;
     }
-
     &__storage-title {
         @extend %summary-misc-title;
     }
-
     &__storage-price {
         @extend %summary-misc-price;
+    }
+    &__storage--disabled {
+        @extend %summary-disabled ;
+    }
+
+    &__custom {
+        @extend %summary-misc-default;
+    }
+    &__custom-title {
+        @extend %summary-misc-title;
+    }
+    &__custom-price {
+        @extend %summary-misc-price;
+    }
+    &__custom--disabled {
+        @extend %summary-disabled;
     }
 }
 

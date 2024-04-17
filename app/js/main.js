@@ -1,13 +1,10 @@
 $(document).ready(function() {
 
-
     let plan = ""
     let billing_yearly = false
     let addon_online = false
     let addon_storage = false
     let addon_custom = false
-    let total = 0
-    let total_message = ""
 
     // Next buttons:
 
@@ -21,34 +18,82 @@ $(document).ready(function() {
 
     })
     $(".form-step3__next-button").on("click", function() {
+
+        $(".summary-hr").addClass('summary-hr--disabled');
+        $(".summary-misc__online").addClass('summary-misc__online--disabled');
+        $(".summary-misc__storage").addClass('summary-misc__storage--disabled');
+        $(".summary-misc__custom").addClass('summary-misc__custom--disabled');
+
+        let total = 0
+        let plan_message = "None"
+        let plan_price_message = "$0/mo"
+        let total_message = "Total (per month)"
+        let total_price_message = "+$0/mo"
        
         if (plan === "arcade") {
             total = total + 9
+            plan_message = "Arcade"
+            if (billing_yearly === true) {
+                plan_price_message = "$90/yr"
+            } else {
+                plan_price_message = "$9/mo"
+            }
         } else if (plan === "advanced") {
             total = total + 12
+            plan_message = "Advanced"
+            if (billing_yearly === true) {
+                plan_price_message = "$120/yr"
+            } else {
+                plan_price_message = "$12/mo"
+            }
         } else if (plan === "pro") {
             total = total + 15
+            plan_message = "Pro"
+            if (billing_yearly === true) {
+                plan_price_message = "$150/yr"
+            } else {
+                plan_price_message = "$15/mo"
+            }
         }
 
         if (addon_online === true) {
             total = total + 1
+            $(".summary-hr").removeClass('summary-hr--disabled');
+            $(".summary-misc__online").removeClass('summary-misc__online--disabled');
         }
         if (addon_storage === true) {
             total = total + 2
+            $(".summary-hr").removeClass('summary-hr--disabled');
+            $(".summary-misc__storage").removeClass('summary-misc__storage--disabled');
         }
         if (addon_custom === true) {
             total = total + 2
+            $(".summary-hr").removeClass('summary-hr--disabled');
+            $(".summary-misc__custom").removeClass('summary-misc__custom--disabled');
         }
 
         if (billing_yearly === true) {
             total = total * 10
-            total_message =  total + "/yr"
+            total_message = "Total (per year)"
+            total_price_message = "$" + total + "/yr"
+            plan_message = plan_message + " " + "(Yearly)"
+            $(".summary-misc__online-price").text("+10/yr");
+            $(".summary-misc__storage-price").text("+20/yr");
+            $(".summary-misc__custom-price").text("+20/yr");
+
         } else {
-            total_message = "+" + total + "/mo"
+            total_message = "Total (per month)"
+            total_price_message = "+$" + total + "/mo"
+            plan_message = plan_message + " " + "(Monthly)"
+            $(".summary-misc__online-price").text("+1/mo");
+            $(".summary-misc__storage-price").text("+2/mo");
+            $(".summary-misc__custom-price").text("+2/mo");
         }
 
-        
-        $(".total-cost__price").text(total_message);
+        $(".summary-plan__title").text(plan_message);
+        $(".summary-plan__price").text(plan_price_message);
+        $(".total-cost__title").text(total_message);
+        $(".total-cost__price").text(total_price_message);
         $(".form-step3").addClass('form-step3--disabled');
         $(".form-step4").removeClass('form-step4--disabled')
 
