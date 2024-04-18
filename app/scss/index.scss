@@ -10,17 +10,29 @@
 .html, body {
     font-size: 16px;
     font-family: 'Ubuntu Regular';
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(231, 100%, 99%); // $alabaster
 }
 
 .wrapper {
+    margin: 0rem 1rem 4rem 1rem;
+    padding: 1.5rem 0rem;
+    border-radius: 14px;
+    width: 968px;
     display: flex;
+    justify-content: center;
+    background-color:  hsl(0,0%, 100%); // $white
 }
-
 
 // variables.scss:
 
 %message {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 %header {
@@ -37,7 +49,7 @@
 %buttons-wrapper {
     width: 100%;
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 %back-button {
@@ -58,6 +70,127 @@
     font-family: 'Ubuntu Medium';
 }
 
+// navigation.scss:
+
+.steps-wrapper {
+    width: 30%;
+    max-width: 274px;
+    max-height: 568px;
+    background-color: hsl(243, 100%, 62%); // $purplish-blue
+    background-image: url("../images/bg-sidebar-desktop.svg");
+    background-position: bottom;
+    border-radius: 8px;
+}
+
+.steps-navigation {
+    margin: 1.5rem;
+}
+
+.form {
+    width: 70%;
+    max-width: 600px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+%steps-navigation-styles {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.steps-navigation__step1 {
+    @extend %steps-navigation-styles;
+}
+.steps-navigation__step2 {
+    @extend %steps-navigation-styles;
+}
+.steps-navigation__step3 {
+    @extend %steps-navigation-styles;
+}
+.steps-navigation__step4 {
+    @extend %steps-navigation-styles;
+}
+
+%nav-num-styles {
+    background-color: hsl(206, 94%, 87%); // $light-blue
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.55rem;
+    text-align: center;
+    border: 1px solid hsl(206, 94%, 87%); // $light-blue
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu Medium';
+}
+
+.nav-step1-num {
+    @extend %nav-num-styles;
+}
+.nav-step2-num {
+    @extend %nav-num-styles;
+}
+.nav-step3-num {
+    @extend %nav-num-styles;
+}
+.nav-step4-num {
+    @extend %nav-num-styles;
+}
+
+
+%nav-text-styles {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+%nav-header-styles {
+    color: hsl(231, 11%, 63%); // $cool-gray
+}
+%nav-desc-styles {
+    color: hsl(231, 100%, 99%); // $alabaster
+    font-family: "Ubuntu Bold";
+}
+
+.nav-step1-text {
+    @extend %nav-text-styles;
+    &__header {
+        @extend %nav-header-styles;
+    }
+    &__desc {
+        @extend %nav-desc-styles;
+    }
+}
+.nav-step2-text {
+    @extend %nav-text-styles;
+    &__header {
+        @extend %nav-header-styles;
+    }
+    &__desc {
+        @extend %nav-desc-styles;
+    }
+}
+.nav-step3-text {
+    @extend %nav-text-styles;
+    &__header {
+        @extend %nav-header-styles;
+    }
+    &__desc {
+        @extend %nav-desc-styles;
+    }
+}
+.nav-step4-text {
+    @extend %nav-text-styles;
+    &__header {
+        @extend %nav-header-styles;
+    }
+    &__desc {
+        @extend %nav-desc-styles;
+    }
+}
 
 // step1.scss:
 
