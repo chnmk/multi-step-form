@@ -6,17 +6,68 @@ $(document).ready(function() {
     let addon_storage = false
     let addon_custom = false
 
+    // Validation plugin:
+
+    var step1_name_form = $(".form-input");
+    var step1_email_form = $(".email-input");
+
+    $.validator.setDefaults({
+        errorClass: "em",
+        validClass: "vm",
+        errorPlacement: function(error, element) {
+            error.insertBefore(element);
+        },
+        highlight: function(element) {
+            $(element).addClass("test")
+        },
+        unhighlight: function(element) {
+        $(element).removeClass("test")
+        }   
+    });
+
+    step1_name_form.validate({
+        rules: {
+            text: {
+                required: true,
+                minlength: 5
+              }          
+          } ,
+          messages: {
+              text: {
+                  required: "This field is required",
+                  minlength: "Please enter at least 5 characters"
+              }
+          } 
+    })
+    step1_email_form.validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+              }          
+          },
+        messages: {
+            email: {
+                required: "This field is required",
+                email: "Invalid email address"
+            }
+        }
+    })
+
     // Next buttons:
 
     $(".form-step1__next-button").on("click", function() {
-        $(".form-step1").addClass('form-step1--disabled');
-        $(".form-step2").removeClass('form-step2--disabled')
+        if (step1_name_form.valid() && step1_email_form.valid()) {
+            $(".form-step1").addClass('form-step1--disabled');
+            $(".form-step2").removeClass('form-step2--disabled')
+        }
     })
+
     $(".form-step2__next-button").on("click", function() {
         $(".form-step2").addClass('form-step2--disabled');
         $(".form-step3").removeClass('form-step3--disabled')
-
     })
+
     $(".form-step3__next-button").on("click", function() {
 
         $(".summary-hr").addClass('summary-hr--disabled');
@@ -98,6 +149,7 @@ $(document).ready(function() {
         $(".form-step4").removeClass('form-step4--disabled')
 
     })
+
     $(".form-step4__next-button").on("click", function() {
         $(".form-step4").addClass('form-step4--disabled');
         $(".form-step5").removeClass('form-step5--disabled')
@@ -175,50 +227,5 @@ $(document).ready(function() {
         $(".form-step4").addClass('form-step4--disabled');
         $(".form-step2").removeClass('form-step2--disabled')
     })
-
-    // Validation:
-
-    $.validator.setDefaults({
-        submitHandler: function() { alert("submitted!"); },
-        errorPlacement: function(error, element) {
-            error.insertBefore(element);
-        }
-    });
-    
-    $("#commentForm").validate({
-        errorClass: "em",
-        validClass: "vm",
-        highlight: function(element, errorClass) {
-            $(element).addClass("test")
-          },
-        unhighlight: function(element, errorClass) {
-        $(element).removeClass("test")
-        }
-    });
-
-    /* Custom messages example:
-
-    $("#myform").validate({
-        rules: {
-            name: "required",
-            email: {
-            required: true,
-            email: true
-            }
-        },
-    })
-
-
-    $("#myform").validate({
-        rules: {
-            name: {
-            required: true,
-            minlength: 2
-            }
-        }
-    )}
-
-    */
-
 })
 

@@ -84,29 +84,27 @@
           </p>
         </div>
         <div class="form-step1__inputs">
-          <form class="cmxform" id="commentForm" method="get" action="">
-            <div class="form-input">
-              <p class="form-input__header">
-                Name
-              </p>
-              <input required minlength="10" type="text" class="form-input__input" placeholder="e.g. Stephen King" />
-            </div>
-            <div class="email-input">
-              <p class="email-input__header">
-                Email Address
-              </p>
-              <input required type="email" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
-            </div>
-            <div class="phone-input">
-              <p class="phone-input__header">
-                Phone Number
-              </p>
-              <input required type="tel" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
-            </div>
+          <form class="form-input">
+            <p class="form-input__header">
+              Name
+            </p>
+            <input name="text" type="text" class="form-input__input" placeholder="e.g. Stephen King" />
+          </form>
+          <form class="email-input">
+            <p class="email-input__header">
+              Email Address
+            </p>
+            <input name="email" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
+          </form>
+          <form class="phone-input">
+            <p class="phone-input__header">
+              Phone Number
+            </p>
+            <input  name="phone" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
           </form>
         </div>
         <div class="form-step1__buttons">
-          <button class="form-step1__next-button" id="target">
+          <button type="button" class="form-step1__next-button">
             Next Step
           </button>
         </div>
