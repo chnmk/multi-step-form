@@ -300,6 +300,9 @@
     &:hover {
         cursor: pointer;
     }
+    &--disabled {
+        background-color: hsl(231, 11%, 63%); // $cool-gray
+    }
 }
 
 %billing-option {
