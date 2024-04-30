@@ -77,33 +77,35 @@
     <!-- Sidebar end -->
     <div class="form">
       <div class="form-step1">
-        <div class="form-step1__message">
-          <h1 class="form-step1__header">
-            Personal info
-          </h1>
-          <p class="form-step1__subheader">
-            Please provide your name, email address, and phone number.
-          </p>
-        </div>
-        <div class="form-step1__inputs">
-          <form class="form-input">
-            <p class="form-input__header">
-              Name
+        <div class="form-step1__body">
+          <div class="form-step1__message">
+            <h1 class="form-step1__header">
+              Personal info
+            </h1>
+            <p class="form-step1__subheader">
+              Please provide your name, email address, and phone number.
             </p>
-            <input name="text" type="text" class="form-input__input" placeholder="e.g. Stephen King" />
-          </form>
-          <form class="email-input">
-            <p class="email-input__header">
-              Email Address
-            </p>
-            <input name="email" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
-          </form>
-          <form class="phone-input">
-            <p class="phone-input__header">
-              Phone Number
-            </p>
-            <input  name="phone" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
-          </form>
+          </div>
+          <div class="form-step1__inputs">
+            <form class="form-input">
+              <p class="form-input__header">
+                Name
+              </p>
+              <input name="text" type="text" class="form-input__input" placeholder="e.g. Stephen King" />
+            </form>
+            <form class="email-input">
+              <p class="email-input__header">
+                Email Address
+              </p>
+              <input name="email" class="email-input__input" placeholder="e.g. stephenking@lorem.com" />
+            </form>
+            <form class="phone-input">
+              <p class="phone-input__header">
+                Phone Number
+              </p>
+              <input  name="phone" class="phone-input__input" placeholder="e.g. +1 234 567 890" />
+            </form>
+          </div>
         </div>
         <div class="form-step1__buttons">
           <button type="button" class="form-step1__next-button">
@@ -114,70 +116,72 @@
       <!-- Step 1 end -->
       <!-- Step 2 start -->
       <div class="form-step2 form-step2--disabled">
-        <div class="form-step2__message">
-          <h1 class="form-step2__header">
-            Select your plan
-          </h1>
-          <p class="form-step2__subheader">
-            You have the option of monthly or yearly billing.
-          </p>
-        </div>
-        <div class="form-step2__options">
-          <div class="plan-option">
-            <div class="arcade-option">
-              <img class="arcade-option_img" src="./images/icon-arcade.svg" alt="Arcade" />
-              <div class="arcade-option__text">
-                <div class="arcade-option__title">
-                  Arcade
-                </div>
-                <div class="arcade-option__price">
-                  $9/mo
-                </div>
-                <div class="arcade-option__free arcade-option__free--disabled">
-                  2 months free
-                </div>
-              </div>
-            </div>
-            <div class="advanced-option">
-              <img class="advanced-option_img" src="./images/icon-advanced.svg" alt="Advanced" />
-              <div class="advanced-option__text">
-                <div class="advanced-option__title">
-                  Advanced
-                </div>
-                <div class="advanced-option__price">
-                  $12/mo
-                </div>
-                <div class="advanced-option__free advanced-option__free--disabled">
-                  2 months free
-                </div>
-              </div>
-            </div>
-            <div class="pro-option">
-              <img class="pro-option_img" src="./images/icon-pro.svg" alt="Pro" />
-              <div class="pro-option__text">
-                <div class="pro-option__title">
-                  Pro
-                </div>
-                <div class="pro-option__price">
-                  $15/mo
-                </div>
-                <div class="pro-option__free pro-option__free--disabled">
-                  2 months free
-                </div>
-              </div>
-            </div>
+        <div class="form-step2__body">
+          <div class="form-step2__message">
+            <h1 class="form-step2__header">
+              Select your plan
+            </h1>
+            <p class="form-step2__subheader">
+              You have the option of monthly or yearly billing.
+            </p>
           </div>
-          <div class="billing-options">
-            <span class="billing-options__monthly billing-options__monthly--active">
-              Monthly
-            </span>
-            <label class="billing-switch">
-              <input type="checkbox">
-              <span class="billing-switch__slider">
-            </label>
-            <span class="billing-options__yearly">
-              Yearly
-            </span>
+          <div class="form-step2__options">
+            <div class="plan-option">
+              <div class="arcade-option">
+                <img class="arcade-option_img" src="./images/icon-arcade.svg" alt="Arcade" />
+                <div class="arcade-option__text">
+                  <div class="arcade-option__title">
+                    Arcade
+                  </div>
+                  <div class="arcade-option__price">
+                    $9/mo
+                  </div>
+                  <div class="arcade-option__free arcade-option__free--disabled">
+                    2 months free
+                  </div>
+                </div>
+              </div>
+              <div class="advanced-option">
+                <img class="advanced-option_img" src="./images/icon-advanced.svg" alt="Advanced" />
+                <div class="advanced-option__text">
+                  <div class="advanced-option__title">
+                    Advanced
+                  </div>
+                  <div class="advanced-option__price">
+                    $12/mo
+                  </div>
+                  <div class="advanced-option__free advanced-option__free--disabled">
+                    2 months free
+                  </div>
+                </div>
+              </div>
+              <div class="pro-option">
+                <img class="pro-option_img" src="./images/icon-pro.svg" alt="Pro" />
+                <div class="pro-option__text">
+                  <div class="pro-option__title">
+                    Pro
+                  </div>
+                  <div class="pro-option__price">
+                    $15/mo
+                  </div>
+                  <div class="pro-option__free pro-option__free--disabled">
+                    2 months free
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="billing-options">
+              <span class="billing-options__monthly billing-options__monthly--active">
+                Monthly
+              </span>
+              <label class="billing-switch">
+                <input type="checkbox">
+                <span class="billing-switch__slider">
+              </label>
+              <span class="billing-options__yearly">
+                Yearly
+              </span>
+            </div>
           </div>
         </div>
         <div class="form-step2__buttons">
@@ -192,68 +196,70 @@
       <!-- Step 2 end -->
       <!-- Step 3 start -->
       <div class="form-step3 form-step3--disabled">
-        <div class="form-step3__message">
-          <h1 class="form-step3__header">
-            Pick add-ons
-          </h1>
-          <p class="form-step3__subheader">
-            Add-ons help enhance your gaming experience.
-          </p>
-        </div>
-        <div class="form-step3__add-ons">
-          <div class="add-online">
-            <span class="add-online__checkbox-container">
-              <span class="add-online__checkbox">
-                <img class="add-online__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
-              </span>
-            </span>
-            <span class="add-online__text">
-              <div class="add-online__text-title">
-                Online service
-              </div>
-              <div class="add-online__text-description">
-                Access to multiplayer games
-              </div>
-            </span>
-            <span class="add-online__price">
-              +$1/mo
-            </span>
+        <div class="form-step3__body">
+          <div class="form-step3__message">
+            <h1 class="form-step3__header">
+              Pick add-ons
+            </h1>
+            <p class="form-step3__subheader">
+              Add-ons help enhance your gaming experience.
+            </p>
           </div>
-          <div class="add-storage">
-            <span class="add-storage__checkbox-container">
-              <span class="add-storage__checkbox">
-                <img class="add-storage__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+          <div class="form-step3__add-ons">
+            <div class="add-online">
+              <span class="add-online__checkbox-container">
+                <span class="add-online__checkbox">
+                  <img class="add-online__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+                </span>
               </span>
-            </span>
-            <span class="add-storage__text">
-              <div class="add-storage__text-title">
-                Larger storage
-              </div>
-              <div class="add-storage__text-description">
-                Extra 1TB of cloud save
-              </div>
-            </span>
-            <span class="add-storage__price">
-              +$2/mo
-            </span>
-          </div>
-          <div class="add-custom">
-            <span class="add-custom__checkbox-container">
-              <span class="add-custom__checkbox">
-                <img class="add-custom__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+              <span class="add-online__text">
+                <div class="add-online__text-title">
+                  Online service
+                </div>
+                <div class="add-online__text-description">
+                  Access to multiplayer games
+                </div>
               </span>
-            </span>
-            <span class="add-custom__text">
-              <div class="add-custom__text-title">
-                Customizable profile
-              </div>
-              <div class="add-custom__text-description">
-                Custom theme on your profile
-              </div>
-            </span>
-            <span class="add-custom__price">
-              +$2/mo
-            </span>
+              <span class="add-online__price">
+                +$1/mo
+              </span>
+            </div>
+            <div class="add-storage">
+              <span class="add-storage__checkbox-container">
+                <span class="add-storage__checkbox">
+                  <img class="add-storage__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+                </span>
+              </span>
+              <span class="add-storage__text">
+                <div class="add-storage__text-title">
+                  Larger storage
+                </div>
+                <div class="add-storage__text-description">
+                  Extra 1TB of cloud save
+                </div>
+              </span>
+              <span class="add-storage__price">
+                +$2/mo
+              </span>
+            </div>
+            <div class="add-custom">
+              <span class="add-custom__checkbox-container">
+                <span class="add-custom__checkbox">
+                  <img class="add-custom__checkbox-img" src="./images/icon-checkmark.svg" alt="checkmark" />
+                </span>
+              </span>
+              <span class="add-custom__text">
+                <div class="add-custom__text-title">
+                  Customizable profile
+                </div>
+                <div class="add-custom__text-description">
+                  Custom theme on your profile
+                </div>
+              </span>
+              <span class="add-custom__price">
+                +$2/mo
+              </span>
+            </div>
           </div>
         </div>
         <div class="form-step3__buttons">
@@ -268,63 +274,65 @@
       <!-- Step 3 end -->
       <!-- Step 4 start -->
       <div class="form-step4 form-step4--disabled">
-        <div class="form-step4__message">
-          <h1 class="form-step4__header">
-            Finishing up
-          </h1>
-          <p class="form-step4__subheader">
-            Double-check everything looks OK before confirming.
-          </p>
-        </div>
-        <div class="form-step4__summary">
-          <div class="summary-plan">
-            <span class="summary-plan__info">
-              <div class="summary-plan__title">
-                Arcade (Monthly)
+        <div class="form-step4__body">
+          <div class="form-step4__message">
+            <h1 class="form-step4__header">
+              Finishing up
+            </h1>
+            <p class="form-step4__subheader">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="form-step4__summary">
+            <div class="summary-plan">
+              <span class="summary-plan__info">
+                <div class="summary-plan__title">
+                  Arcade (Monthly)
+                </div>
+                <div class="summary-plan__change">
+                  Change
+                </div>
+              </span>
+              <span class="summary-plan__price">
+                $9/mo
+              </span>
+            </div>
+            <hr class="summary-hr" />
+            <div class="summary-misc">
+              <div class="summary-misc__online">
+                <span class="summary-misc__online-title">
+                  Online service
+                </span>
+                <span class="summary-misc__online-price">
+                  +$1/mo
+                </span>
               </div>
-              <div class="summary-plan__change">
-                Change
+              <div class="summary-misc__storage">
+                <span class="summary-misc__storage-title">
+                  Larger storage
+                </span>
+                <span class="summary-misc__storage-price">
+                  +$2/mo
+                </span>
               </div>
+              <div class="summary-misc__custom">
+                <span class="summary-misc__custom-title">
+                  Customizable profile
+                </span>
+                <span class="summary-misc__custom-price">
+                  +$2/mo
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="total-cost">
+            <span class="total-cost__title">
+              Total (per month/year)
             </span>
-            <span class="summary-plan__price">
-              $9/mo
+            <span class="total-cost__price">
+              +$12/mo
             </span>
           </div>
-          <hr class="summary-hr" />
-          <div class="summary-misc">
-            <div class="summary-misc__online">
-              <span class="summary-misc__online-title">
-                Online service
-              </span>
-              <span class="summary-misc__online-price">
-                +$1/mo
-              </span>
-            </div>
-            <div class="summary-misc__storage">
-              <span class="summary-misc__storage-title">
-                Larger storage
-              </span>
-              <span class="summary-misc__storage-price">
-                +$2/mo
-              </span>
-            </div>
-            <div class="summary-misc__custom">
-              <span class="summary-misc__custom-title">
-                Customizable profile
-              </span>
-              <span class="summary-misc__custom-price">
-                +$2/mo
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="total-cost">
-          <span class="total-cost__title">
-            Total (per month/year)
-          </span>
-          <span class="total-cost__price">
-            +$12/mo
-          </span>
         </div>
         <div class="form-step4__buttons">
           <span class="form-step4__back-button">

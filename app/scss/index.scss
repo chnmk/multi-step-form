@@ -38,6 +38,7 @@
 
 %message {
     margin-bottom: 2.5rem;
+    height: 20%;
 }
 
 %header {
@@ -49,6 +50,10 @@
 %subheader {
     margin-top: 0rem;
     color: hsl(231, 11%, 63%); // $cool-gray
+}
+
+%body {
+    height: 60%;
 }
 
 %buttons-wrapper {
@@ -208,15 +213,19 @@
 
 .form-step1 {
     &__message {
-        @extend %message
+        @extend %message;
     }
 
     &__header {
-        @extend %header
+        @extend %header;
     }
 
     &__subheader {
-        @extend %subheader
+        @extend %subheader;
+    }
+
+    &__body {
+        @extend %body;
     }
 }
 
@@ -290,15 +299,19 @@
 
 .form-step2 {
     &__message {
-        @extend %message
+        @extend %message;
     }
 
     &__header {
-        @extend %header
+        @extend %header;
     }
 
     &__subheader {
-        @extend %subheader
+        @extend %subheader;
+    }
+
+    &__body {
+        @extend %body;
     }
 }
 
@@ -537,15 +550,19 @@ input:checked + .billing-switch__slider:before {
 
 .form-step3 {
     &__message {
-        @extend %message
+        @extend %message;
     }
 
     &__header {
-        @extend %header
+        @extend %header;
     }
 
     &__subheader {
-        @extend %subheader
+        @extend %subheader;
+    }
+
+    &__body {
+        @extend %body;
     }
 }
 
@@ -748,15 +765,19 @@ input:checked + .billing-switch__slider:before {
 
 .form-step4 {
     &__message {
-        @extend %message
+        @extend %message;
     }
 
     &__header {
-        @extend %header
+        @extend %header;
     }
 
     &__subheader {
-        @extend %subheader
+        @extend %subheader;
+    }
+
+    &__body {
+        @extend %body;
     }
 }
 
