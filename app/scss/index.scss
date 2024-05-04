@@ -36,6 +36,10 @@
 
 // variables.scss:
 
+%form-wrapper {
+    width: 80%;
+}
+
 %message {
     margin-bottom: 2.5rem;
     height: 20%;
@@ -212,6 +216,9 @@
 }
 
 .form-step1 {
+
+    @extend %form-wrapper;
+
     &__message {
         @extend %message;
     }
@@ -298,6 +305,9 @@
 // step2.scss:
 
 .form-step2 {
+
+    @extend %form-wrapper;
+    
     &__message {
         @extend %message;
     }
@@ -549,6 +559,9 @@ input:checked + .billing-switch__slider:before {
 // step3.scss:
 
 .form-step3 {
+
+    @extend %form-wrapper;
+
     &__message {
         @extend %message;
     }
@@ -764,6 +777,9 @@ input:checked + .billing-switch__slider:before {
 // step4.scss:
 
 .form-step4 {
+
+    @extend %form-wrapper;
+    
     &__message {
         @extend %message;
     }
