@@ -72,6 +72,7 @@
     font-size: 0.9rem;
     font-family: 'Ubuntu Medium';
     color: hsl(231, 11%, 63%); // $cool-gray
+    transition: .3s;
 }
 
 %next-button {
@@ -83,6 +84,7 @@
     color: hsl(0, 0%, 100%); // $white
     font-family: 'Ubuntu Medium';
     width: 7rem;
+    transition: .3s;
 }
 
 // navigation.scss:
@@ -299,6 +301,8 @@
     @extend %next-button;
     &:hover {
         cursor: pointer;
+        background-color: hsl(243, 100%, 62%); // $purplish-blue
+        transition: .3s;
     }
 }
 
@@ -461,6 +465,8 @@
     @extend %back-button;
     &:hover {
         cursor: pointer;
+        color: hsl(213, 96%, 18%); // $marine-blue
+        transition: .3s;
     }
 }
 
@@ -468,6 +474,8 @@
     @extend %next-button;
     &:hover {
         cursor: pointer;
+        background-color: hsl(243, 100%, 62%); // $purplish-blue
+        transition: .3s;
     }
     &--disabled {
         background-color: hsl(231, 11%, 63%); // $cool-gray
@@ -763,6 +771,8 @@ input:checked + .billing-switch__slider:before {
     @extend %back-button;
     &:hover {
         cursor: pointer;
+        color: hsl(213, 96%, 18%); // $marine-blue
+        transition: .3s;
     }
 }
 
@@ -770,6 +780,8 @@ input:checked + .billing-switch__slider:before {
     @extend %next-button;
     &:hover {
         cursor: pointer;
+        background-color: hsl(243, 100%, 62%); // $purplish-blue
+        transition: .3s;
     }
 }
 
@@ -935,6 +947,8 @@ input:checked + .billing-switch__slider:before {
     @extend %back-button;
     &:hover {
         cursor: pointer;
+        color: hsl(213, 96%, 18%); // $marine-blue
+        transition: .3s;
     }
 }
 
@@ -942,6 +956,8 @@ input:checked + .billing-switch__slider:before {
     @extend %next-button;
     &:hover {
         cursor: pointer;
+        background-color: hsl(243, 100%, 62%); // $purplish-blue
+        transition: .3s;
     }
 }
 
